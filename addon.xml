@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="context.watchlater" name="Watch Later" version="0.0.1" provider-name="dave">
+  <requires>
+    <import addon="xbmc.python" version="2.26.0"/>
+  </requires>
+    
+  <extension point="kodi.context.item">
+    <menu id="kodi.core.main">
+      <item library="setwatchlater.py">
+        <label>32002</label>
+        <visible>String.IsEqual(ListItem.dbtype,movie)</visible>
+        <!--<visible>String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)</visible>-->
+      </item>
+      <item library="removewatchlater.py">
+        <label>32003</label>
+        <visible>String.IsEqual(ListItem.dbtype,movie)</visible>
+        <!--<visible>String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)</visible>-->
+      </item>    
+    </menu>
+  </extension>
+
+  <!--
+  <extension point="kodi.python.script" library="togglewatchlater.py">
+    <provides>video</provides>
+    <summary lang="en_GB">Toggle the watch later tag for a video</summary>
+  </extension>
+  -->
+  
+  <extension point="kodi.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">Set a watch later tag for videos from the context menu</summary>
+    <description lang="en_GB">A context menu for movies to add or remove a 'Watch Later' tag</description>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <source>https://github.com/davels/context.watchlater</source>
+    <news>
+    </news>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+    </assets>    
+  </extension>
+  
+</addon>

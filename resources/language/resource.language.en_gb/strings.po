@@ -1,0 +1,30 @@
+# Kodi Media Center language file
+# Addon Name: watchlater
+# Addon id: context.watchlater
+msgid ""
+msgstr ""
+
+msgctxt "#32000"
+msgid "Tags"
+msgstr ""
+
+msgctxt "#32001"
+msgid "Tag Name"
+msgstr ""
+
+msgctxt "#32002"
+msgid "Add to Watch Later"
+msgstr ""
+
+msgctxt "#32003"
+msgid "Remove from Watch Later"
+msgstr ""
+
+msgctxt "#32004"
+msgid "Added to"
+msgstr ""
+
+msgctxt "#32005"
+msgid "Removed from"
+msgstr ""
+
